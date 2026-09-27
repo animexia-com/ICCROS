@@ -34,7 +34,6 @@
             position: relative;
         }
 
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -115,11 +114,6 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 40px;
-        }
-
-        .container-fluid {
-            width: 100%;
             padding: 0 40px;
         }
 
@@ -312,6 +306,7 @@
             margin-bottom: 20px;
             box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
             animation: float 3s ease-in-out infinite;
+            padding: 20px;
         }
 
         @keyframes float {
@@ -327,7 +322,6 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            filter: invert(1);
         }
 
         .hero h1 {
@@ -592,7 +586,6 @@
             overflow: hidden;
             cursor: pointer;
             position: relative;
-            group: 'gallery';
         }
 
         .gallery-item::before {
@@ -783,4 +776,9 @@
             color: #999999;
         }
 
-        .form-group
+        .form-group input,
+        .form-group textarea {
+            padding: 14px;
+            background: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            border-
